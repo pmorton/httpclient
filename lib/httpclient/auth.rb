@@ -140,6 +140,8 @@ class HTTPClient
           end
           # ignore unknown authentication scheme
         end
+      else
+        reset_challenge
       end
       command
     end
